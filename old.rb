@@ -21,11 +21,13 @@ HEADSHOTS=
   "Thor Odinson"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRk43atCq1Vj2Ouj1R_zMeV8MQ6yPeCBtQNDT33s_Y4-MZx4uS"}
 
   def call(env)
-    p env
+    #p env
     if env["REQUEST_METHOD"]=="GET"   
+			frontpage=ERB.new(File.read("frontpage.erb"))
       template=ERB.new(File.read("template.erb"))
       if env["PATH_INFO"]=="/"
-        [404,{"Content-Type"=>"text"},["Please try again."]]
+				success(frontpage.result(binding))
+        #[404,{"Content-Type"=>"text"},["Please try again."]]
       elsif File.exists?("."+(env["PATH_INFO"]))
         quotetext=File.read("."+(env["PATH_INFO"]))
         heroname=env["PATH_INFO"]

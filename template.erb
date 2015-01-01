@@ -5,25 +5,19 @@
 </head>
 <body>
 <h1>Getting to know our Heroes</h1>
-<p>Hero Name:</p>
+<h2>The Avengers</h2>
 <p><%=heroname%> </p>
 <img src="<%=picture%>"/> 
-<p>Alternate Identity:</p> 
-<p><%=identity%> </p>
 
 <p>Quote:</p>
 <p>"<%=quotetext%>"</p>
 
-<form action="/" method="POST">
-  <input type="text" name="Push_me" />
-  <input type="submit" name="submit" value="submit" />
-</form>
+<FORM>
+<INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;">
+</FORM>
 
 </body>
 </html>
-
-
-
 
 <!--Anything in between the angle brackets is Ruby code, interpreted as code, not as text, even in a text file. .erb=embedded Ruby-->
 
