@@ -1,7 +1,7 @@
-Banner: Loki's mind is like a box of cats. You can smell the crazy on him.
+﻿Banner: Loki's mind is like a box of cats. You can smell the crazy on him.<br/><br/>
 
-Thor: Have a care how you speak. Loki is beyond reason, but he is of Asgard, and he is my brother.
+Thor: Have a care how you speak. Loki is beyond reason, but he is of Asgard, and he is my brother.<br/><br/>
 
-Black Widow: He killed 80 people in two days.
+Black Widow: He killed 80 people in two days.<br/><br/>
 
-Thor: He’s adopted.
+Thor: ...He’s adopted.
